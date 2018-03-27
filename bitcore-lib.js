@@ -9687,7 +9687,9 @@ Transaction.prototype.toObject = Transaction.prototype.toJSON = function toObjec
   this.outputs.forEach(function(output) {
     outputs.push(output.toObject());
   });
-  var obj = {
+
+
+    var obj = {
     hash: this.hash,
     version: this.version,
     inputs: inputs,
